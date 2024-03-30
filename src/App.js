@@ -10,6 +10,7 @@ function App() {
     { date: "2020-09-03", views: 200, article: "Article 4" }
   ]);
 
+  
   const sortByDate = () => {
     const sortedData = [...data].sort((a, b) => new Date(b.date) - new Date(a.date));
     setData(sortedData);
